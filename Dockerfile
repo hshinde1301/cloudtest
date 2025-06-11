@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 MAINTAINER user@gmail.com
-RUN apt install -y httpd \
+RUN apt install -y apache2 \
 zip \
 unzip
 ADD https://templatemo.com/download/templatemo_589_lugx_gaming /var/www/html/
