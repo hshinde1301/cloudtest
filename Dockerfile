@@ -3,10 +3,9 @@ MAINTAINER user@gmail.com
 RUN apt install -y httpd \
 zip \
 unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page258/loxury.zip /var/www/html/
+ADD https://templatemo.com/download/templatemo_589_lugx_gaming /var/www/html/
 WORKDIR /var/www/html
-RUN unzip loxury.zip
-RUN cp -rvf loxury/* .
-RUN rm -rf loxury loxury.zip
+
+RUN rm -rf templatemo_589_lugx_gaming
 CMD ["/usr/sbin/httpd", "-D",
 EXPOSE 80
