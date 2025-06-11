@@ -1,6 +1,6 @@
-FROM ubuntu:latest
+FROM oraclelinux:8
 MAINTAINER user@gmail.com
-RUN apt install -y apache2 \
+RUN yum install -y httpd \
 zip \
 unzip
 ADD https://templatemo.com/download/templatemo_589_lugx_gaming /var/www/html/
