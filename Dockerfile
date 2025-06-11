@@ -1,5 +1,5 @@
 FROM oraclelinux:8
-MAINTAINER user@gmail.com
+LABEL authors="Jenkins Admin"
 RUN yum install -y httpd \
 zip \
 unzip
